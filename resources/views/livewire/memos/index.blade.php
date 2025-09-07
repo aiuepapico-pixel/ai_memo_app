@@ -13,6 +13,12 @@ state([
 
 <div>
     <div class="max-w-7xl mx-auto p-6 lg:p-8">
+        <div class="flex justify-between items-center">
+            <h2 class="text-lg font-medium text-gray-900">メモ一覧</h2>
+            <x-primary-button tag="a" href="{{ route('memos.create') }}" wire:navigate>
+                新規作成
+            </x-primary-button>
+        </div>
         <div class="mt-16">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
                 @foreach ($memos as $memo)

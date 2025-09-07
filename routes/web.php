@@ -20,6 +20,7 @@ Route::middleware(['auth'])->group(function () {
 
     // メモ関連のルート
     Volt::route('memos', 'memos.index')->name('memos.index');
+    Volt::route('memos/create', 'memos.create')->name('memos.create');
     Volt::route('memos/{memo}', 'memos.show')->name('memos.show');
 });
 
